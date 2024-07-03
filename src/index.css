@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loader {
+    width: 80px;
+    /* Adjust width as needed */
+    height: 20px;
+    /* Adjust height as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.dot.dot2 {
+    background-color: #4285F4;
+    animation-delay: 0.1s;
+}
+
+.dot.dot3 {
+    background-color: #EA4335;
+    animation-delay: 0.2s;
+}
+
+.dot.dot4 {
+    background-color: #FBBC05;
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
