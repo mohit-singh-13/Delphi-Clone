@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'max-sm': { 'max': '450px' },
+        'max-sm': { 'max': '550px' },
       }
     },
   },
