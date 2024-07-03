@@ -12,8 +12,6 @@ const Chat = () => {
     const changeHandler = (event) => {
         const {value} = event.target;
 
-        console.log("called")
-
         setText(value);
     }
 

@@ -1,7 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const generateResponse = async (message) => {
-    console.log(message);
 
     const API_KEY = import.meta.env.VITE_API_KEY;
     const genAI = new GoogleGenerativeAI(API_KEY);
@@ -15,7 +14,6 @@ const generateResponse = async (message) => {
     const response = result.response;
     
     const text = response.text();
-    console.log(text);
 
     return text;
 };
